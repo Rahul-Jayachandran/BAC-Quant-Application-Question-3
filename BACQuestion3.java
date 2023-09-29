@@ -13,7 +13,7 @@ public class BACQuestion3 {
                             {4,0,0,0,0,0,0},
                             {0,0,0,6,0,0,0},
                             {0,0,2,0,0,0,0}};
-        
+
         //a solved board for reference
         int[] numSol = {0,0,0,0,0,0,0};
         int[][] solution = {{0,5,5,0,5,0,5},
@@ -46,7 +46,7 @@ public class BACQuestion3 {
         }
 
         if(complete) {
-            return true;
+            return validate(board);
         }
 
         //checks that each row is still under to 20
